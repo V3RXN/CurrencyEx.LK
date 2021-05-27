@@ -1,0 +1,120 @@
+.topbar{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	text-align: center;
+	background-color:#212529;
+	
+}
+
+#title{
+	text-transform: uppercase;
+	font-weight: 700;
+	font-family: 'Lato', sans-serif;
+	font-size: 48px;
+	display: block;
+	color: white;
+	
+}
+
+
+#logo{
+	display: block;
+	max-width: 134px;
+    max-height: 134px;
+}
+
+#currencyrow{
+	margin: 15px;
+	display: flex;
+	flex-direction: row;
+	place-items: center;
+	text-align: center;
+	align-items: center;
+}
+
+#cards{
+	margin: 20px;
+	max-width: 100%;
+	
+}
+
+#currencyinfo{
+	background-image: url("bg.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#about{
+	background-image: url("aboutbg.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 300px;
+}
+
+
+#time-container{
+	text-align: right;
+}
+
+#sectiontitle-container{
+	display: flex;
+    align-items: center;
+    justify-content: left;
+	text-align: left;
+	background-color:#212529;
+	height: 80px;
+}
+
+#sectiontitle{
+	font-weight: 500;
+	font-family: 'Lato', sans-serif;
+	font-size: 32px;
+	display: block;
+	color: white;
+	margin: 10px;
+	word-spacing: 8px;
+}
+
+#rights-container{
+	text-align: center;
+}
+
+#currencyinfo{
+	background-image: url("bg.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.nav-item{
+	margin: 8px;
+}
+
+#sectionicon{
+	display: block;
+	max-width: 40px;
+    max-height: 40px;
+	margin: 6px;
+}
+
+#about-text{
+	margin: 50px;
+	color: white;
+}
+
+#contactbtn{
+	margin-left: 25px;
+	max-width:100%;
+}
+
+#pcontainer{
+	align-items: center;
+}
+
+#baseCurrency{
+	cursor: pointer;
+}
+
+#convertbtn-container{
+	 justify-content: center;
+}

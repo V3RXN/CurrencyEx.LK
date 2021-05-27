@@ -1,0 +1,303 @@
+<html>
+	<head>
+
+		<title>CurrencyEx.LK</title>
+		<link rel="icon" href="assets/logo.png">
+		
+		<!-- JQuery-->
+		<script src="js/jquery-3.4.1.min.js"></script>
+		
+		<!-- Google fonts-->
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+		
+		 <!-- Bootstrap CSS & JS-->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+
+		<link rel="stylesheet" href="css/Styles.css">
+		
+		<script src="js/javascript.js"> </script>
+		
+	</head>
+
+	<body>
+		<!-- Title Bar -->
+		<div class="topbar">
+			<img src="assets/logo.png" id="logo">
+			<h1 id="title">CurrencyEx.LK</h1>		
+		</div>
+		
+		<!-- Navigation Bar -->
+		<nav class="navbar navbar-expand-sm bg-light navbar-light justify-content-center">
+			<ul class="navbar-nav">
+				<li class="nav-item" active>
+				  <a class="nav-link" href="#currencyinfo">CURRENCY INFO</a>
+				</li>
+				<li class="nav-item" >
+				  <a class="nav-link" href="#conversion">CURRENCY CONVERSION</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="#about">ABOUT</a>
+				</li>
+		    </ul>
+			<div id="button-container">
+				<a class="btn btn-primary" href="mailto:veronsajendra@gmail.com" role="button" id="contactbtn">CONTACT ME</a>
+			</div>
+		</nav>
+		
+		<!-- Currency Information Section -->
+		
+		<section id="currencyinfo" >
+			
+			<div id="sectiontitle-container" >
+					<img src="assets/info.png" id="sectionicon">
+					<h2 id="sectiontitle">CURRENCY INFO</h2>		
+			</div>
+
+			<div id="currencyrow" class="d-flex justify-content-center" >
+					
+				<div id="cards">
+					<div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+						<img class="card-img-top" src="assets/usd.jpg" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">USD to Lankan Rupees</h5>
+							<p class="card-text" id="usdlkr"></p>
+						 </div>
+					</div>
+				</div>
+					
+				<div id="cards">	
+					<div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+						<img class="card-img-top" src="assets/btc.png" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">Bitcoin to Lankan Rupees</h5>
+							<p class="card-text" id="btclkr"></p>
+						 </div>
+					</div>
+				</div>
+					
+				<div id="cards">	
+					<div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+						<img class="card-img-top" src="assets/jpy.png" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">Yen to Lankan Rupees</h5>
+							<p class="card-text" id="jpylkr"></p>
+						</div>
+					</div>
+				</div>
+			</div>
+				
+			<div id="currencyrow" class="d-flex justify-content-center">
+				<div id="cards">
+					<div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+						<img class="card-img-top" src="assets/eur.png" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">Euro to Lankan Rupees</h5>
+							<p class="card-text" id="eurlkr"></p>
+						</div>
+					</div>
+				</div>	
+					
+				<div id="cards">
+					<div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+						<img class="card-img-top" src="assets/gbp.png" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">Pound to Lankan Rupees</h5>
+							<p class="card-text" id="gbplkr"></p>
+						</div>
+					</div>
+				</div>
+					
+				<div id="cards">
+					<div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+						<img class="card-img-top" src="assets/aud.png" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">AUD to Lankan Rupees</h5>
+							<p class="card-text" id="audlkr"></p>
+						</div>
+					</div>
+				</div>
+					
+			</div>
+				
+			<div id="currencyrow" class="d-flex justify-content-center">
+				
+				<div id="cards">
+					<div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+						<img class="card-img-top" src="assets/inr.png" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">INR to Lankan Rupees</h5>
+							<p class="card-text" id="inrlkr"></p>
+						</div>
+					</div>
+				</div>
+			
+					
+				<div id="cards">
+					<div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+						<img class="card-img-top" src="assets/cad.png" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">CAD to Lankan Rupees</h5>
+							<p class="card-text" id="cadlkr"></p>
+						</div>
+					</div>
+				</div>
+					
+				<div id="cards">
+					<div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+						<img class="card-img-top" src="assets/mxn.png" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">Peso to Lankan Rupees</h5>
+							<p class="card-text" id="mxnlkr"></p>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
+			<div id="currencyrow" class="d-flex justify-content-center">
+			
+				<div id="cards">
+					<div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+						<img class="card-img-top" src="assets/chf.png" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">Franc to Lankan Rupees</h5>
+							<p class="card-text" id="chflkr"></p>
+						</div>
+					</div>
+				</div>
+				
+				<div id="cards">
+					<div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+						<img class="card-img-top" src="assets/rub.png" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">Ruble to Lankan Rupees</h5>
+							<p class="card-text" id="rublkr"></p>
+						</div>
+					</div>
+				</div>
+				
+				<div id="cards">
+					<div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+						<img class="card-img-top" src="assets/cny.png" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">Renminbi to Lankan Rupees</h5>
+							<p class="card-text" id="cnylkr"></p>
+						</div>
+					</div>
+				</div>
+	
+			</div>
+			
+			<div id="time-container">
+				<div class="card">
+					<div class="card-body">
+						<p style="display: inline;"> Updated on: </p> 
+						<p style="display: inline;" id="update"> </p>
+					</div>
+				</div>
+			</div>
+				
+		</section>
+		
+		<!-- Currency Conversion Section -->
+			
+		<section id="conversion" >
+			
+			<div id="sectiontitle-container">
+				<img src="assets/convo.png" id="sectionicon">
+				<h2 id="sectiontitle">CURRENCY CONVERSION</h2>		
+			</div>
+			
+			<div class="container">
+				
+				<br>
+			
+				<form id="converterform">
+				
+					<label for="Currency"> Currency </label>
+					
+					<br>
+					
+					<select class="form-control" id="baseCurrency">
+						<option> USD </option>
+						<option> BTC </option>
+						<option> JPY </option>
+						<option> EUR </option>
+						<option> GBP </option>
+						<option> AUD </option>
+						<option> INR </option>
+						<option> CAD </option>
+						<option> MXN </option>
+						<option> CHF </option>
+						<option> RUB </option>
+						<option> CNY </option>
+					</select>
+					
+					<br>
+					
+					<div class="form-group">
+					
+						<input type="number" class="form-control" id="baseAmount" value="1">
+					
+					</div>
+					
+					<label for="Target Currency">Target Currency</label>
+					
+					<select class="form-control" id="target">
+					
+						<option>LKR</option>
+						
+					</select>
+					
+					<br>
+
+					
+					<button type="button" class="btn btn-dark" id="convertbtn">Convert</button>
+					
+					<br>
+					<br>
+					
+					<div class="form-group">
+					
+						<input type="number" class="form-control" readonly  id="result">
+					
+					</div>
+					
+					
+				</form>
+			
+			</div>
+			
+			<br>
+			
+		</section>
+		
+		<!-- About Section-->
+			
+		<section id="about">
+			
+			<div id="sectiontitle-container">
+				<img src="assets/about.png" id="sectionicon">
+				<h2 id="sectiontitle">ABOUT</h2>		
+			</div>
+			
+			<div id="pcontainer">
+				<p class="lead" id="about-text"> This website was built with the aid of Coinbase API in order to provide users with up-to-date and reliable data. Exchange rates of the most used currencies to Lankan Ruppees are represented in the top section of the website, which is 'Currency Info'. 'Currency Conversion' section is a currency converter to get the Lankan Ruppee value for any amount you enter for a selected currency.</p>
+			
+			
+		</section>
+		
+		<!-- Footer/Copyright Section -->
+		<div id="rights-container">
+				<div class="card">
+					<div class="card-body">
+						<p>Copyright© 2021 Veron Sajendra Baranige</p> 
+					</div>
+				</div>
+		</div>
+		
+	</body>
+
+</html>
